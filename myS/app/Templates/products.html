@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <!-- <header>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar bg-secondary " data-bs-theme="dark">
+                <div class="container">  
+                  <a class="navbar-brand " href="#">LOGO</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                 
+                  <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-3 mb-lg-0  ">
+                      <li class="nav-item">
+                        <a class="nav-link text-dark " aria-current="page" href="#">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="products.html">PRODUCTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">ABOUT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href= "#">CONTACTS</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+    </header> -->
+    {% include "header.html" %}
+
+
+<main>
+  <section id="sec2" class="pt-5">
+
+    <div class="title text-center  pt-5 ">
+      <h2 class="">Products</h2>
+    </div>
+  
+    <div class=" container p-4">
+      
+      <div class=" row  justify-content-md-around">
+  
+        {% for each_product in prod_info %}
+
+        <div class=" cc  col-xl-3 p-2   ">
+          <div class="new">
+            <img src="{{each_product.image.url}}" class="w-100" alt="">
+          </div>
+            <h6>{{each_product.name}} </h6>
+            <span>${{each_product.price}}</span>
+            <i class="bi bi-bag"></i>
+        </div> 
+        
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

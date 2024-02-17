@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+  #sec6 .helpl{
+    margin-top: 50px;
+}
+.helpl .he1{
+    padding-bottom: 20px;
+}
+
+iframe{
+    border-radius: 50px;
+}
+
+/* FORM */
+
+form .in{
+    height: 40px;
+    margin: 30px 0;
+}
+
+.in input{
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 40px 20px 20px; 
+}
+
+.in input::placeholder{
+    color: #fff;
+}
+
+form button{
+    width: 50%;
+    height: 40px;
+    background: #000;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+</style>
+<body>
+  {% include "header.html" %}
+
+  <main>
+    <section id="sec6" >
+      <div class="container pt-5">
+    
+        <div class="title text-center pt-5">
+          <h2>HELP</h2>
+        </div>
+    
+        <div class="row pt-5">
+    
+          <div class="col-lg-5 col-md-5 col-sm-4">
+            <br><br>
+            <h3 style="font-weight: bolder;">Sign in and start <span style="font-weight: bolder; display: block;">buying your fit.</span></h3>
+            <br>
+    
+            <div class="bbx">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.4433706737173!2d38.69060011319262!3d9.004813284472347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8701acd435e7%3A0x4e173e7e21632ae5!2sBethel%20Hospital%20%7C%20Bethel!5e0!3m2!1sen!2set!4v1701455121356!5m2!1sen!2set" 
+              width="250" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+          </div>
+    
+          <div class="helpl col-lg-7 col-md-7 col-sm-8 text-center ">
+            
+            <div class="he1">
+    
+          <h4 style="font-weight: bolder;;">Join our community</h4>
+          </BR>
+          <p>Get early access to collection drops, first in line for limited edition pieces, exclusive pre-orders, collabs, event invites and more.</p>
+           </div>
+    
+            <form action="">
+              <!-- <h2 style="font-weight: bolder;">Sign in</h2> -->
+    
+              <div class="in"> <input type="email" placeholder=" Email" required >
+              </div>
+    
+              <!-- <div class="in"><input type="password" placeholder="Password" required>
+              </div> -->
+    
+              <!-- <div class="for">
+                <label>
+                  <input type="checkbox"> Remember me
+                </label>
+                <a href="">Forgot password?</a>
+              </div> -->
+              <button type="submit">SUBSCRIBE</button>
+    
+              <!-- <div class="reg">
+                <p>Don't have an account? <a href="#">Register</a></p>
+              </div> -->
+    
+            </form>
+          </div>
+    
+        </div>
+    
+      </div>
+      <br> <br> <br>
+    </section>
+  </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
